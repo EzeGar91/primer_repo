@@ -5,11 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=h1, initial-scale=1.0">
     <title>Haus Inmobiliaria</title>
-    <link rel="stylesheet" href="CSS/estilos.css" />
+    <!-- Anulado por el momento:
+      <link rel="stylesheet" href="CSS/estilos.css" />
+    -->
+    <link rel="stylesheet" href="CSS/pruebacss.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet">
-    
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta name="description" content="Sitio web oficial de HAUS Servicios Inmobiliarios, aquí podras ver las propiedades a la venta y para compra">
+    <meta name="keywords"  content="DEPARTAMENTOS, DEPTOS, CAMPOS, CASA, DUPLEX, HAMBIENTES"> 
+
 </head>
 <body>
     
@@ -30,42 +35,79 @@
    
     <main>
 
-        <div id="boxGrid">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="fotos/casa.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="fotos/edificio.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="fotos/mesa.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="fotos/noche.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
 
-            <div id="boxUno"><img src="fotos/casa.jpg" width="100%" height="auto">CAJA 1</div>   
-            <div id="boxDos"><img src="fotos/edificio.jpg" width="100%" height="auto">CAJA 2</div>   
-            <div id="boxTres"><img src="fotos/mesa.jpg" width="100%" height="auto">CAJA 3</div>   
-            <div id="boxCuatro"><img src="fotos/noche.jpg" width="100%" height="auto">CAJA 4 </div>   
-     
-       </div>
-         
-       
+        
         <!-- Inicio Primera Seccion-->
         <section>
             <Article>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores nulla illum explicabo perferendis sunt! Sint blanditiis cumque numquam hic mollitia! Repellat earum officia fuga incidunt voluptatum modi sit iste sint.
-                </p>
+              <p class="hola">Hola! Muchas gracias por visitar nuestro sitio. Somos una inmobiliara con larga trayectoria en el rubro de Real Estate. Tenemos a tu disposicion los mejores asesores calificados en el tema.</p>
             </Article>
         </section>
         <!--Fin primera Seccion-->
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores nulla illum explicabo perferendis sunt! Sint blanditiis cumque numquam hic mollitia! Repellat earum officia fuga incidunt voluptatum modi sit iste sint.
-        </p>
-        <!--Inicio Segunda Seccion-->
+        <!-- Inicio Segunda Seccion-->
         <section>
-            <ul class="flexMenu">
-                <li><a href="#">FaceBook Page</a></li>
-                <li><a href="#">Instagram Page</a></li>
-                <li><a href="#">Mail</a></li>
-            </ul>
-        </section>  
-        <!--/Fin Segunda Seccion-->
+          <Article>
+              <p class="lorem1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni sunt soluta consectetur rerum quibusdam, voluptatem voluptates velit odio, ad consequuntur delectus eligendi rem aspernatur perspiciatis dolorum autem at deserunt voluptatum?</p>
+          </Article>
+        </section>
+        <!--Fin Segunda Seccion-->
+        <!-- Inicio Tercera Seccion-->
+        <section>
+          <Article>
+              <p class="lorem2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis nobis facere fugit, cumque veritatis consectetur non doloribus ea dolore ratione sunt, veniam excepturi tempora aspernatur voluptatem libero dolorum dicta deserunt.</p>  </Article>
+        </section>
+        <!--Fin Tercera Seccion-->
+
+        
     </main>
     <footer>
-        <p>Ubicacion</p>
-        <img src="fotos/ubicacion.jpg">
-    </footer>
+       <section>
+        <ul class="flexMenu">
+            <li><a href="https://es-la.facebook.com/">FaceBook Page</a></li>
+            <li><a href="https://www.instagram.com/">Instagram Page</a></li>
+            <li><a href="https://www.gmail.com/">Mail</a></li>
+        </ul>
+        </section>
+      <div id="boxGrid2">
+
+          <div id="boxUno"><width="100%" height="auto"><h2>Ubicacion</h2><br>Jose Eusebio Colombres 981 - Barrio San Martin - Córdoba Capital - Argentina</div>   
+          <div id="boxDos"><img src="fotos/ubicacion.jpg" width="100%" height="auto"></div>   
+   
+      </div>  
+
+     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 </body>
 </html>
