@@ -1,0 +1,228 @@
+/* Flex Menu */
+p {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 25px;
+  font-family: 'odibee sans', sans-serif;
+  color: black;
+  text-align: justify;
+  line-height: 2;
+  text-decoration: none;
+  background-color: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+table {
+  background-color: lightblue;
+  border: 3px solid;
+  margin: 50px 50px;
+  padding: 50px;
+  border: 2px solid black;
+  size: 90vh;
+}
+
+table tr, table td {
+  border: 1px solid;
+  color: black;
+  padding: 5px;
+}
+
+body {
+  font-family: 'Odibee Sans', cursive;
+  background: url "fotos/fondo.jpg";
+  margin: 10px;
+  padding: 10px;
+}
+
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style-type: none;
+  background-color: #0f0909;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+li {
+  color: white;
+  font-size: 20px;
+  padding: 5px;
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+
+.servicio-padre {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: repeat 4, 1fr;
+      grid-template-columns: repeat 4, 1fr;
+  grid-gap: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.servicio-hijo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flexMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+  font-size: 1rem;
+}
+
+.flexMenu li a:hover {
+  background-color: white;
+  color: #0f0909;
+}
+
+.flexMenu li a {
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+}
+
+.paraTransicion:hover {
+  -webkit-transition: 2s;
+  transition: 2s;
+  font-size: 8vh;
+}
+
+#boxGrid {
+  display: -ms-grid;
+  display: grid;
+  background-color: white;
+  -ms-grid-columns: 400px 400px;
+      grid-template-columns: 400px 400px;
+  -ms-grid-rows: 400px 400px;
+      grid-template-rows: 400px 400px;
+      grid-template-areas: "area1 area2"  "area3 area4";
+  -webkit-column-gap: 15px;
+          column-gap: 15px;
+  row-gap: 15px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+#boxUno {
+  background-color: none;
+  width: 100%;
+  height: auto;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: area1;
+      justify-self: center;
+}
+
+#boxDos {
+  background-color: none;
+  width: 100%;
+  height: auto;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: area2;
+      justify-self: center;
+}
+
+#boxTres {
+  background-color: none;
+  width: 100%;
+  height: auto;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: area3;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+#boxCuatro {
+  background-color: none;
+  width: 100%;
+  height: auto;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: area4;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+/* Footer */
+#footer {
+  background-color: white;
+  width: 100%;
+  height: 100px;
+  padding: 50px 0 0 0;
+  font-size: 2rem;
+  font-weight: 900;
+  text-align: center;
+}
+
+#boxGrid2 {
+  display: -ms-grid;
+  display: grid;
+  background-color: white;
+  -ms-grid-columns: 400px;
+      grid-template-columns: 400px;
+  -ms-grid-rows: 400px;
+      grid-template-rows: 400px;
+      grid-template-areas: "area1 area2";
+  -webkit-column-gap: 15px;
+          column-gap: 15px;
+  row-gap: 15px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.hola {
+  color: black;
+  font-size: 25px;
+  background-color: grey;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+/*# sourceMappingURL=prueba.css.map */
